@@ -1,0 +1,8 @@
+h1 {
+  text-align: center;
+  border: solid;
+  width: 50%;
+}
+/* text align is relative to the parent element(h1). */
+
+

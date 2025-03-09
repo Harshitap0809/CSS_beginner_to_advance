@@ -1,0 +1,15 @@
+/* 
+Color Systems 
+1. Named colors
+- Each browser recognizes around 140 color names.
+- e.g. red, blue, green, yellow, orange, purple, pink, black, white, gray, etc.
+- e.g. h2 { color: orange; }
+
+2. RGB colors(Red, Green, Blue)
+- Each color is represented by a combination of red, green, and blue.
+- Each color channel can have a value between 0 and 255.
+- i.e. rgb(255, 0, 0) is red, rgb(0, 255, 0) is green, rgb(0, 0, 255) is blue.
+- color = rgb(0,0,0) is black, color = rgb(255,255,255) is white.
+- red + blue = purple, red + green = yellow, green + blue = cyan.
+- e.g. h2 { color: rgb(255, 0, 0); }
+*/

@@ -1,0 +1,26 @@
+/* 
+FONT-SIZE UNITS IN CSS
+Absolute Units: means that the length is fixed and will not change with the size of the browser window.
+- px: Pixels
+- in: Inches
+- cm: Centimeters
+- mm: Millimeters
+- pt: Points
+- pc: Picas
+
+Relative Units: means that the length is relative to something else, such as the size of the browser window or the font size.
+- em: Relative to the font-size of the element
+- rem: Relative to the font-size of the root element
+- vw: Relative to 1% of the width of the viewport
+- vh: Relative to 1% of the height of the viewport
+- %: Relative to the parent element
+*/
+
+/* 
+Pixels(px) - Absolute Unit
+- One pixel is equal to one dot on the computer screen (the smallest division of a screen).
+- most common unit for setting font sizes.
+- 96px = 1 inch means 1px = 1/96 inch
+- not suitable for responsive websites. Because the size of the pixel is fixed and does not change with the size of the browser window.
+- font-size: 20px; 
+*/

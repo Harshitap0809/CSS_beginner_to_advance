@@ -1,0 +1,15 @@
+/* 
+3. Hexadecimal or Hex Color System:
+- Letters : 0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F
+- Each color channel can have a value between 00 and FF.
+- The color is represented as # followed by the 6-digit hexadecimal code.
+- Example: #FF0000 is the color red.
+- color = #000000 is black, color = #FFFFFF is white.
+- red + blue = purple, red + green = yellow, green + blue = cyan.
+- e.g. h2 { color: #FF0000; }
+- e.g. p { color: #FFFFFF; background-color: #000000; }
+- somtimes the shorthand is used, e.g. #000 is equivalent to #000000. 
+- Meaning of the 6 digits: #RRGGBB and the 3 digits: #RGB
+- e.g. #FF0000 is red, #00FF00 is green, #0000FF is blue, #000000 is black, #FFFFFF is white.
+- e.g. #FF00FF is purple, #FFFF00 is yellow, #00FFFF is cyan.
+*/

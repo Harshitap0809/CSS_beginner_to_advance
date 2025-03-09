@@ -1,0 +1,29 @@
+/* 
+HOW TO INCLUDE STYLES ? (generally used)
+1. Create a new file called "styles.css" in the same directory as your HTML file.
+2. Add your CSS code to the "styles.css" file.
+3. Link the "styles.css" file to your HTML file using the <link> tag.
+
+1. INLINE STYLES
+- You can add CSS directly to an HTML element using the style attribute.
+- The style attribute can contain any CSS property.
+- <h1 style="color: blue;">Hello, World!</h1>
+
+2. Using <style> tag 
+- You can add CSS to an HTML document using the <style> tag.
+- The <style> tag should be placed inside the <head> element.
+- <style>
+    h1 {
+        color: blue;
+    }
+  </style>
+
+3. Using External Stylesheet
+- You can add CSS to an HTML document using an external stylesheet.
+- An external stylesheet is a separate file that contains CSS code.
+- You can link the external stylesheet to your HTML document using the <link> tag.
+- link tag should be placed inside the <head> element.
+- <link rel="stylesheet" href="styles.css">
+- here rel="stylesheet" is an attribute that specifies the relationship between the current document and the linked document.
+- href="styles.css" is an attribute that specifies the URL of the external stylesheet.
+*/

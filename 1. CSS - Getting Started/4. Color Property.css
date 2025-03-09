@@ -1,0 +1,8 @@
+/* 
+Color Property:
+- The color property is used to set the color of the foreground (text).
+*/
+
+h1 {
+  color: red;
+}

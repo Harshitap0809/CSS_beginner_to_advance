@@ -1,0 +1,7 @@
+/* 
+font- family 
+-specifies a prioritized list of one or more font family names. 
+-If the first font in the list is not available, the browser will try the next font.
+-If none of the fonts are available, it will use the default font of the browser.
+- font-family: Arial, sans-serif(this one is the backup family of a font); 
+*/

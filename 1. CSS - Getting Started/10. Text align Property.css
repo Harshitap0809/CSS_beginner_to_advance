@@ -1,0 +1,19 @@
+/* 
+Text Properties:
+- text-align: left, right, center, justify
+- font-weight: bold, normal
+- text-decoration: underline, line-through, overline
+- line-height: 1.5, 2, 3
+- letter-spacing: 1px, 2px, 3px
+- font-size: 1em, 2em, 3em
+- font-family: Arial, sans-serif, monospace
+- color: red, blue, green
+*/
+
+/* 
+Text align Property: (parent element) Means how the text should be aligned inside the parent element.
+text-align: left/start; (dfault)
+text-align: right/end;
+text-align: center;
+text-align: justify;
+*/
