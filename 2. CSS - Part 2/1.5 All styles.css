@@ -1,0 +1,137 @@
+/* universal selector */
+/* usually not used in real life websites */
+* {
+  font-family: "Courier New", Courier, monospace;
+  background-color: whitesmoke;
+}
+
+/* element selector */
+h1,
+h3 {
+  color: #b92b27;
+}
+
+/* ID selector */
+/* Selects an element based on the value of the element's id attribute */
+/* We can give same id to multiple elements but usually we dont do this, rather assigning unique ID is preferrable. */
+#login {
+  background-color: #fff;
+}
+#signup {
+  color: #fff;
+  background-color: #b92b27;
+}
+
+/* class selector */
+/* Selects all elements with the specified class attribute */
+/* We can give same class to multiple elements */
+.upvote {
+  color: aliceblue;
+  background-color: green;
+}
+
+/* descendant selector */
+/* Selects all elements that are descendants of a specified element */
+/* Muli-level deep */
+.post a {
+  color: purple;
+  background-color: yellow;
+}
+nav ul li a {
+  color: palevioletred;
+}
+
+/* Adjacent Sibling Combinator */
+p + h3 {
+  text-decoration: underline;
+}
+
+.upvote + button {
+  background-color: cornflowerblue;
+  color: darkblue;
+}
+
+/* Child Combinator */
+/* Selects ALL elements that are the immediate(direct) children of a specified element */
+/* only one level deep */
+div > input {
+  background-color: darksalmon;
+}
+
+/* Attribute selector  */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors */
+input[type="text"] {
+  color: red;
+}
+input[type="password"] {
+  color: green;
+}
+input[type] {
+  background-color: ghostwhite;
+}
+
+/* pseudo class */
+/* Selects elements based on a certain state */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes */
+/* hover class */
+button:hover {
+  background-color: darkorange;
+}
+h3:hover {
+  text-decoration: none;
+}
+
+/* active class */
+button:active {
+  background-color: pink;
+}
+/* If u notice, the login and sign up buttons are not changing color on hover or active state. This is because we have used ID selector for these buttons. */
+/* If we want to change the color of these buttons on hover or active state, we need to use class selector instead of ID selector. */
+p:active {
+  color: green;
+  font-weight: bold;
+}
+
+/* checked class */
+input[type="radio"]:checked + label {
+  color: red;
+  font-weight: bold;
+}
+/* here for the above code, checked + label is written because the label is the next sibling of the radio button. */
+/* If the label was not the next sibling of the radio button, we would have used the general sibling combinator ~ instead of the adjacent sibling combinator + */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/General_sibling_combinator */
+
+/* nth-of-type */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes */
+/*
+ div:nth-of-type(odd) {
+  background-color: lightblue;
+} 
+*/
+/* after writing the above code: The issue arises because of the universal selector (* { background-color: whitesmoke; }) that applies background-color: whitesmoke; to all elements, including <p> and <h3>. This overrides the background-color: lightblue; applied to the first <div> using div:nth-of-type(odd).*/
+
+/* To ensure that the child elements inside the first <div> also get the same background color, update your CSS given below: */
+div:nth-of-type(odd) {
+  background-color: lightblue;
+}
+
+div:nth-of-type(odd) p,
+div:nth-of-type(odd) h3,
+div:nth-of-type(odd) span {
+  background-color: lightblue;
+}
+/* or simply remove universal selector (*) : whitesmoke */
+
+/* pseudo element */
+/* Selects and styles a part of an element */
+h1::first-letter {
+  color: red;
+  font-weight: bold;
+}
+p::first-line {
+  color: purple;
+  font-weight: bold;
+}
+p::selection {
+  color: yellowgreen;
+}

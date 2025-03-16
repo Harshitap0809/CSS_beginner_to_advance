@@ -1,0 +1,54 @@
+/* PART A (SELECTORS) solution */
+* {
+  text-align: center;
+}
+
+#mainTopic {
+  color: blue;
+}
+
+h1,
+h3,
+h5 {
+  font-family: georgia;
+}
+
+.para {
+  color: white;
+  background-color: cornflowerblue;
+}
+
+div > button {
+  background-color: purple;
+  color: azure;
+}
+
+/* PART B (Pseduo class & elements) solution */
+div > button:hover {
+  background-color: yellow;
+  color: blue;
+}
+
+p:nth-of-type(2n + 1) {
+  color: yellow;
+}
+
+h1::first-letter {
+  color: red;
+}
+
+input[type="checkbox"]:checked + label {
+  color: darkgreen;
+}
+
+/* #yes:checked + label {
+  color: darkgreen;
+} */
+
+/* least to most specific are: */
+/* 
+- h1 (0,0,1)
+- .main (0,1,0)
+- div.main (0,1,1)
+- #mainContent (1,0,0)
+*/
