@@ -1,0 +1,58 @@
+/* box model */
+div {
+  height: 500px;
+  width: 500px;
+  background-color: pink;
+}
+
+/* height & width */
+div {
+  /* 
+  border-width: 5px;
+  border-style: solid;
+  border-color: black; 
+  */
+  border: 5px solid yellow; /* shorthand */
+
+  /* Border Slides */
+  /* border-left: 20px solid black;
+  border-right: 20px solid black; */
+  border-top-color: blue;
+  border-top-style: dashed;
+
+  /* Border radius */
+  border-radius: 20px;
+  /* border-radius: 50%; circle: if height and width is of same size. */
+  border-top-right-radius: 50px; /* for individual right corner */
+
+  /* padding */
+  padding-top: 20px;
+
+  /* margin */
+  margin-top: 25px;
+  /* margin: 25px; shorthand */
+  /* margin: 25px 50px; top-bottom (25px) & right-left (50px) */
+  /* margin: 25px 50px 75px 100px; top right bottom left */
+  /* margin: 25px 50px 75px; top right-left bottom */
+}
+
+h1 {
+  border-width: 2px;
+  border-style: dashed;
+  border-color: green;
+  border: 2px dashed green; /* shorthand */
+  margin: 0; /* remove default margin */
+}
+
+button {
+  border: 2px solid black;
+  border-radius: 10px;
+  /* padding */
+  padding-left: 25px;
+  padding-right: 25px;
+  /* padding: 50px; shorthand
+  padding: 10px 20px; top-bottom (10px) & right-left (20px)
+  padding: 10px 20px 30px 40px; top right bottom left
+  padding: 10px 20px 30px; top right-left bottom */
+  background-color: yellow;
+}

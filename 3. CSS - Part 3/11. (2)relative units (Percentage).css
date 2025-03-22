@@ -1,0 +1,17 @@
+h1 {
+  border: 2px solid black;
+  width: 33.33%; /* 33.33% of the parent element(parent element means initially the h1 tag was accupying 100% width of the screen.) */
+}
+#outer {
+  height: 400px;
+  width: 400px;
+  background-color: pink;
+  margin: 50px;
+}
+
+#inner {
+  height: 100px;
+  width: 100px;
+  background-color: cornflowerblue;
+  margin-left: 10%; /* 10% of the parent element (means 400 ka 10% is 40px) */
+}

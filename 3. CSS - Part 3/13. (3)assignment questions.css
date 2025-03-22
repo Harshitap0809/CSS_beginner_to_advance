@@ -1,0 +1,30 @@
+/* div {
+    height: 150px;
+    width: 300px;
+    background-color: grey;
+    margin-top: 20px;
+    margin-right: 1em;
+    margin-left: 2em;
+    padding: 1em;
+} */
+
+/* div {
+  height: 100px;
+  width: 100px;
+  background-color: pink;
+  border: 2px solid black;
+  border-radius: 50%;
+  display: inline-block;
+} */
+
+li {
+  display: inline; /* Changes <li> elements from block to inline, making them behave like text */
+}
+
+/* Explanation: 
+  1. By default, <li> elements have 'display: list-item;' which ensures bullets/numbers appear.
+  2. Applying 'display: inline;' removes this default behavior.
+  3. As a result, the list markers (bullets or numbers) disappear.
+  4. The <li> elements now behave like inline text, appearing side by side without bullets.
+  5. In a way, we override the default settings with our CSS.
+*/

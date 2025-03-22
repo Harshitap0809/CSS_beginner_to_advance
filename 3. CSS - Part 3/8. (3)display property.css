@@ -1,0 +1,20 @@
+h1,
+h2 {
+  display: inline;
+  background-color: pink;
+}
+span {
+  display: block;
+  /* background-color: yellowgreen; */
+}
+#span3 {
+  display: inline;
+  /* background-color: lightblue; */
+  border: 2px solid black;
+  height: 100px; /* height is not working, ignored by browser */
+  width: 100px; /* width is not working, ignored by browser */
+  padding: 50px; /* it is merged with div element */
+  /* IMP NOTE: for inline elements(here, span tag), padding is set only to its LEFT and RIGHT even after writing padding: 50px; by removing the background-color u can get understand.
+  /* please refer the image from the file -> 8. (4)inline padding consequences */
+  margin: 20px; /* margin is also set only to the LEFT and RIGHT of the element */
+}

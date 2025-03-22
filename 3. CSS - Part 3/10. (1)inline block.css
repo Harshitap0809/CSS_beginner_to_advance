@@ -1,0 +1,15 @@
+div {
+  height: 200px;
+  width: 200px;
+  background-color: greenyellow;
+  border: 2px solid black;
+  margin: 5px;
+  display: inline-block;
+  /* when we write inline-block, the style is applied as block element but the elements are behaving as inline elements */
+  /* it is used when we want to arrange our block ekements into a single line without loosing any of its applied property */
+}
+
+#third {
+  display: none;
+  /* display: none; is used to hide the element */
+}

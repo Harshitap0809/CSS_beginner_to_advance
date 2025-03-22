@@ -1,0 +1,41 @@
+div {
+  font-size: 1em;
+  /* 
+  Here, 1em is equal to the font-size of the parent element.
+  Means if the parent element has a font-size of 16px, then 1em is equal to 16px.
+  In this case, the font-size of the div element will be 16px because 1em is equal to 16px.
+  */
+  font-size: 2em;
+  /* 
+  as soon as I write 2em, it will be equal to 2 times the font-size of the parent element.
+  Means if the parent element has a font-size of 16px, then 2em is equal to 32px.
+  so for 3 nested divs, the font-size will be 16px, 32px, 64px.
+  div1 = 16px, div2 = 32px, div3 = 64px
+  this is happening because the font-size of the parent element is 16px.
+  This is called snow ball effect, which is not good.
+  snow ball effect means the font-size of the child element is increasing with the increase in the font-size of the parent element.
+  this is the disadvantage of using em.
+  that's why we use rem.
+  */
+
+  font-size: 0.5em;
+  /* 
+  this snowballing effect is also applicable in the case of decreasing the font-size.
+  Means if the parent element has a font-size of 16px, then 0.5em is equal to 8px.
+  so for 3 nested divs, the font-size will be 16px, 8px, 4px.
+  div1 = 16px, div2 = 8px, div3 = 4px
+  */
+
+  /* 
+  IMP NOTE: For an HTML document, the root element is <html>. 
+  So, rem will work according to that. Here, font-size is changing based on <html>, not <section>.
+  */
+  /* font-size: 0.5rem;  */
+  font-size: 2rem;
+  /* 
+  so in above example, the font-size of the div element will be 32px because 2rem is equal to 32px.
+  it will be consistent for all the nested divs.
+  because rem is relative to the root element, not the parent element.
+  and here parent element is <section> and root element is <html>.
+  */
+}
