@@ -1,0 +1,56 @@
+section {
+  margin-top: 100px;
+}
+
+div {
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  background-color: #7aa874;
+  border: 2px solid #000;
+  margin: 10px auto;
+}
+div:nth-of-type(2n) {
+  background-color: #f7db6a;
+}
+
+div:nth-of-type(3n) {
+  background-color: #ebb02d;
+}
+
+/* tranform */
+#one {
+  transform: rotate(45deg);
+}
+#two {
+  transform: scale(0.5); /* 50% */
+  transform: scale(
+    1.5,
+    0.5
+  ); /* 150% width(x direction), 50% height(y direction) */
+  transform: scaleX(1.5); /* 150% width(x direction) */
+  transform: scaleY(0.5); /* 50% height(y direction) */
+}
+
+/* translate */
+#three {
+  transform: translate(100px, 100px);
+  transform: translateX(100px); /* 100px in x direction */
+  /* 
+  In translate(x, y), x is the horizontal distance and y is the vertical distance.
+  It moves the element from its current position, horizontally by x pixels and vertically by y pixels.
+  whereas, tranform: scale(1.5, 0.5); is used to scale the element. Means it increases/decreases the size of the element.
+  */
+}
+
+/* skew */
+#four {
+  transform: skew(30deg, 20deg);
+  /* transform: skewX(30deg); 30deg in x direction */
+  /* transform: skewY(20deg); 20deg in y direction */
+}
+
+/* applying all the properties on a single element */
+#five {
+  transform: rotate(45deg) translate(100px, 100px);
+}

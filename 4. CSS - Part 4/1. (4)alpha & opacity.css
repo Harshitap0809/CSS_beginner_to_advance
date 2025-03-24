@@ -1,0 +1,17 @@
+div {
+  height: 200px;
+  width: 200px;
+  background-color: rgba(
+    255,
+    0,
+    0,
+    0
+  ); /* red color with 0 opacity, nothing visible because alpha value is set to 0. But U may notice that the heading is still visible. */
+  background-color: rgba(255, 0, 0, 0.5); /* red color with 50% opacity */
+}
+
+#opacity {
+  background-color: #ffa511;
+  opacity: 0; /* Here in this case nothing is visible, the heading is also not visible. */
+  /* so basically, here the opacity is applioed for all the elements. */
+}

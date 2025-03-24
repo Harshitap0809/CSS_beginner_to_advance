@@ -1,0 +1,32 @@
+#face {
+  width: 400px;
+  height: 400px;
+  background-color: rgb(237, 151, 31);
+  border-radius: 50%;
+}
+#mouth {
+  width: 200px;
+  height: 75px;
+  background-color: brown;
+  /* border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%; */
+  border-radius: 0 0 50% 50%;
+  position: absolute; /* to move the mouth */
+  margin-top: 270px; /* to move the mouth */
+  margin-left: 100px; /* to move the mouth */
+}
+#left-eye,
+#right-eye {
+  width: 80px;
+  height: 80px;
+  background-color: black;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute; /* to move the eyes */
+  margin-top: 100px; /* to move the eyes */
+  margin-left: 80px; /* to move the eyes */
+}
+
+#right-eye {
+  margin-left: 230px; /* to move the eyes */
+}
