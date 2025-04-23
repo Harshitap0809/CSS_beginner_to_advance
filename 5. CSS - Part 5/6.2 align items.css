@@ -1,0 +1,29 @@
+#container {
+  height: 300px;
+  width: 80%;
+  margin: 10px auto;
+  background-color: azure;
+  border: 2px solid black;
+
+  /* now understanding how to display flex item */
+  display: flex; /* This makes the container a flex container */
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: flex-end; 
+  align-items: center;
+  align-items: baseline; /* the text of each content(box in output) is aligned in same line irrespective or their sizes. see image 6.4 baseline output example. */
+
+}
+
+#container div {
+  height: 50px;
+  width: 300px;
+  color: white;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+h1 {
+  text-align: center;
+}

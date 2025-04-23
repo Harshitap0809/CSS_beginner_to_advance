@@ -1,0 +1,27 @@
+#container {
+  height: 300px;
+  width: 80%;
+  margin: 10px auto;
+  background-color: azure;
+  border: 2px solid black;
+
+  /* now understanding how to display flex item */
+  display: flex; /* This makes the container a flex container */
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: nowrap; /* This makes the items not wrap (no change - becoz by default flex wrap is a no wrap) */
+  flex-wrap: wrap; /* This makes the items wrap line to line*/
+  flex-wrap: wrap-reverse; /*  This makes the items wrap line to line in reverse order */
+}
+
+#container div {
+  height: 100px;
+  width: 300px;
+  color: white;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+h1 {
+  text-align: center;
+}

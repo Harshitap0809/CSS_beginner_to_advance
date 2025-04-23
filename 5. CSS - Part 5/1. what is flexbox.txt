@@ -1,0 +1,6 @@
+What is Flexbox?
+- Flexible Box Layout 
+- It is a one-dimensional layout method for arranging items in rows and columns.
+- It helps in making website responsive(layout is displayed properly in each and every devices).
+- In responsive website -> screen size changes along with layout -> therefore we call it as flexible layout -> This is how came across the concept of 'Flexbox'.
+- Flexbox makes the element layout flexible.

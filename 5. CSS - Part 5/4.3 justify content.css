@@ -1,0 +1,28 @@
+#container {
+  height: 300px;
+  width: 80%;
+  margin: 10px auto;
+  background-color: azure;
+  border: 2px solid black;
+
+  /* now understanding how to display flex item */
+  display: flex; /* This makes the container a flex container */
+  flex-direction: column-reverse; /* This sets the direction of the flex items */
+  justify-content: flex-end; /* This aligns the items to the end of the container */
+  justify-content: center;
+  justify-content: space-between; /* This distributes space between the items (if extra space is present, then only it can distribute the spaces. otherwise no effect eg: if in #container div { width:500}, then it will not show the effect because no extra space is present inside the main container.)*/
+  justify-content: space-around; /* This distributes space around the items (uneven spaces - corner space(first and last) is half size of the middle spaces size)*/
+  justify-content: space-evenly; /* This distributes space evenly between the items (even space sizes from start to end) */
+}
+
+#container div {
+  height: 25px;
+  width: 50px;
+  color: white;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+h1 {
+  text-align: center;
+}

@@ -1,0 +1,46 @@
+/* ANS 1 */
+#container {
+  height: 400px;
+  width: 400px;
+  border: rgb(47, 176, 159) 2px solid;
+  border-radius: 10px;
+  display: flex;
+  /* above line put the container in 1 single line */
+  flex-wrap: wrap;
+  /* above line put the items in multiple lines */
+  justify-content: space-evenly;
+  /* above line put the items in even spaces */
+  align-items: center;
+}
+
+.box {
+  height: 100px;
+  width: 100px;
+  font-size: 50px;
+  background-color: grey;
+  border: 2px solid black;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* ANS 2 */
+#navbar {
+  height: 50px;
+  width: 900px;
+  background-color: rgb(249, 183, 176);
+  border: 2px solid rgb(47, 176, 159);
+  border-radius: 10px;
+  display: flex;
+  /* text-align: center; */ /* no need */
+  justify-content: flex-start;
+  /* align-content: center; */ /* no need */
+}
+
+.option {
+  height: 50px;
+  width: 80px;
+  font-size: 24px;
+  margin-left: 5px;
+  line-height: 50px;
+  /* above line center the text vertically */
+}

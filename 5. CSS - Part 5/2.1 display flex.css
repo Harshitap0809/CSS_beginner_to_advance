@@ -1,0 +1,23 @@
+#container {
+  height: 300px;
+  width: 80%;
+  margin: 10px auto;
+  background-color: azure;
+  border: 2px solid black;
+
+  /* now understanding how to display flex item */
+  display: flex; /* This makes the container a flex container */
+  flex-direction: column; /* This sets the direction of the flex items */
+}
+
+#container div {
+  height: 100px;
+  width: 500px;
+  color: white;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+h1 {
+  text-align: center;
+}
